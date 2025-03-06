@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttons button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-stop-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#start-stop-btn:hover {
+    background-color: #218838;
+}
+
+#reset-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .time-display {
+        font-size: 2rem;
+    }
+
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

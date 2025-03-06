@@ -1,0 +1,79 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a02ba6, #36dde6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: linear-gradient(to right, #3be172, #e3b314);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.choice {
+    background-color: #2e4ce0;
+    color: rgb(17, 15, 15);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.choice:hover {
+    background-color: #5296db;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.player-choice, .computer-choice {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .choices {
+        flex-direction: column;
+    }
+
+    .choice {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

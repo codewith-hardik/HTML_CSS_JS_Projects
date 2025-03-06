@@ -1,0 +1,73 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6d5dfc, #4975fc);
+    color: #fff;
+}
+
+.timer-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.time-display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    background: #4975fc;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.controls button:hover {
+    background: #6d5dfc;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .time-display {
+        font-size: 2.5rem;
+    }
+
+    .controls button {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}

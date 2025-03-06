@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Drum Kit</h1>
+    </header>
+    <main>
+        <div class="drum-kit">
+            <button class="drum" data-sound="kick">Kick</button>
+            <button class="drum" data-sound="snare">Snare</button>
+            <button class="drum" data-sound="tom">Tom</button>
+            <button class="drum" data-sound="hi-hat">Hi-Hat</button>
+        </div>
+        <div class="controls">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1">
+            <button id="record">Record</button>
+            <button id="playback">Play Back</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Drum Kit</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

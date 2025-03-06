@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="question-section">
+      <h2 id="question">Question text will appear here</h2>
+    </div>
+    <div class="answers-section" id="answers">
+      <!-- Answer buttons will be generated dynamically -->
+    </div>
+    <div class="navigation-section">
+      <button id="prev-btn" disabled>Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div class="score-section hidden">
+      <h3>Your Score: <span id="score">0</span></h3>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

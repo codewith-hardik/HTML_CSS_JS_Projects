@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Memory Card Game</h1>
+      <div class="controls">
+        <button id="theme-toggle">Toggle Theme</button>
+        <select id="level-select">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <span id="timer">Time: 60s</span>
+        <span id="score">Score: 0</span>
+      </div>
+    </header>
+    <main>
+      <div class="card-grid"></div>
+    </main>
+    <footer>
+      <button id="restart">Restart Game</button>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

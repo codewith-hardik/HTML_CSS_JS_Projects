@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+#nevbar{
+    height: 60px;
+    background-color: #0f1111;
+
+}
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    font-size: 25px;
+    color: #f08804;
+    text-decoration: none;
+}
+
+a{
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+.contentbox{
+    
+    border: 2px rgb(9, 0, 2) solid;
+    height: 100px;
+    width: 200px;
+
+
+}
+
+#content{
+    height: 700px;
+}
+
+footer{
+    text-align: center;
+    background-color: #0f1111;
+    color: azure;
+}

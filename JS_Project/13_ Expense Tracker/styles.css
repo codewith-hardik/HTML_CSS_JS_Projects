@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #6200ea;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        body{
+            background-color: black;
+            font-family: "Ubuntu";
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10px;
+            color: white;
+        }
+        .card{
+            display: flex;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 20px;
+            border: 2px solid rgb(85, 81, 81);
+            height: 150px;
+            width: 65%;
+            border-radius: 10px;
+            background-color: rgb(16, 16, 16);
+            
+        }
+        .card:hover{
+            background-color: rgb(26, 23, 23);
+        }
+        .img img{
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+           
+        }
+        .img{
+            position: relative;
+        }
+        .img .capsul{
+            position: absolute;
+            background-color: rgb(46, 44, 44);
+            color: white;
+            bottom: 5px;
+            right: 3px;
+            border-radius: 3px;
+            font-size: small;
+            padding: 3px;
+        }
+        .title{
+            font-size: x-large;
+        }
+        .content p{
+            font-size: small;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="mr.beast.jpg"   alt="">
+                <span class="capsul">20:20</span>
+            </div>
+            <div class="content">
+                <div class="title">Beast Games Episode 1 (First 10 Minutes)</div>
+                <p>MrBeast &#x2022; 100k views &#x2022; 2 months ago </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

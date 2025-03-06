@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <button id="toggle-dark-mode">Dark Mode</button>
+    </header>
+    <main>
+        <section id="add-expense">
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <input type="date" id="expense-date" required>
+                <input type="text" id="expense-category" placeholder="Category" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <textarea id="expense-description" placeholder="Description"></textarea>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        <section id="expense-history">
+            <h2>Expense History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list">
+                    <!-- Dynamic rows here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Total Expenses: $<span id="total-expenses">0.00</span></p>
+            <canvas id="expense-chart"></canvas>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
